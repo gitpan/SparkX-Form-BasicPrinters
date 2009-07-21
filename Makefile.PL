@@ -7,7 +7,10 @@ WriteMakefile
           'EXE_FILES' => [],
           'VERSION_FROM' => 'lib/SparkX/Form/BasicPrinters.pm',
           'PREREQ_PM' => {
-                           'Test::More' => 0
+                           'Test::More' => 0,
+                           'Spark::Form' => '0.1',
+                           'Moose' => 0,
+                           'HTML::Tiny' => 0
                          }
         )
 ;

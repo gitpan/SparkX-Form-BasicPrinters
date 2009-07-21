@@ -1,18 +1,22 @@
 ---
 name: SparkX-Form-BasicPrinters
-version: 0.1
+version: 0.2
 author:
   - 'James Laver <printf(qw[%s@%s.%s cpan jameslaver com])>'
 abstract: A selection of basic form printers for printing a C<SparkX::Form>.
 license: perl
 resources:
   license: ~
+requires:
+  HTML::Tiny: 0
+  Moose: 0
+  Spark::Form: 0.1
 build_requires:
   Test::More: 0
 provides:
   SparkX::Form::BasicPrinters:
     file: lib/SparkX/Form/BasicPrinters.pm
-    version: 0.1
+    version: 0.2
   SparkX::Form::Printer::List:
     file: lib/SparkX/Form/Printer/List.pm
     version: 0.01
